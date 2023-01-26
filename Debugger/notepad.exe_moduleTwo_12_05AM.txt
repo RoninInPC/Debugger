@@ -1,0 +1,54 @@
+HeapAlloc:
+CALL ADDRESS:
+236FBCC
+
+HeapAlloc:
+argument number 0:
+hHeap - HANDLE, A handle to the heap from which the memory will be allocated.This handle is returned by the HeapCreate or GetProcessHeap function.: 2700000
+
+argument number 1:
+dwFlags - DWORD, The heap allocation options. Specifying any of these values will override the corresponding value specified when the heap was created with HeapCreate.This parameter can be one or more of values. 0 - NULL
+
+argument number 2:
+dwBytes - SIZE_T, The number of bytes to be allocated.: 128
+
+HeapAlloc
+RETURN PARSING VALUE:
+Ans of function - PVOID of allocated heap. If an error has occurred, it will NULL: 27093E0
+
+HeapSize:
+CALL ADDRESS:
+236EF44
+
+HeapSize:
+argument number 0:
+hHeap - HANDLE, A handle to the heap whose memory block is to be freed.This handle is returned by either the HeapCreate or GetProcessHeap function.: 2700000
+
+argument number 1:
+dwFlags - DWORD, The heap allocation options. Specifying any of these values will override the corresponding value specified when the heap was created with HeapCreate.This parameter can be one or more of values. 1 - HEAP_NO_SERIALIZE
+
+argument number 2:
+lpMem - PVOID, A pointer to the memory block to be freed.This pointer is returned by the HeapAlloc or HeapReAlloc functionThis pointer can be NULL.: 271CCC0
+
+HeapSize
+RETURN PARSING VALUE:
+Ans of function - If the function succeeds, the return VALUE is the requested size of the allocated memory block, in bytes.If the function fails, the return VALUE is -1: 5092
+
+HeapSize:
+CALL ADDRESS:
+236E5C0
+
+HeapSize:
+argument number 0:
+hHeap - HANDLE, A handle to the heap whose memory block is to be freed.This handle is returned by either the HeapCreate or GetProcessHeap function.: 2700000
+
+argument number 1:
+dwFlags - DWORD, The heap allocation options. Specifying any of these values will override the corresponding value specified when the heap was created with HeapCreate.This parameter can be one or more of values. 0 - NULL
+
+argument number 2:
+lpMem - PVOID, A pointer to the memory block to be freed.This pointer is returned by the HeapAlloc or HeapReAlloc functionThis pointer can be NULL.: 2717E20
+
+HeapSize
+RETURN PARSING VALUE:
+Ans of function - If the function succeeds, the return VALUE is the requested size of the allocated memory block, in bytes.If the function fails, the return VALUE is -1: 128
+

@@ -1,0 +1,90 @@
+HeapAlloc:
+CALL ADDRESS:
+327F90C
+
+HeapAlloc:
+argument number 0:
+hHeap - HANDLE, A handle to the heap from which the memory will be allocated.This handle is returned by the HeapCreate or GetProcessHeap function.: 3550000
+
+argument number 1:
+dwFlags - DWORD, The heap allocation options. Specifying any of these values will override the corresponding value specified when the heap was created with HeapCreate.This parameter can be one or more of values. 0 - NULL
+
+argument number 2:
+dwBytes - SIZE_T, The number of bytes to be allocated.: 128
+
+HeapAlloc
+RETURN PARSING VALUE:
+Ans of function - PVOID of allocated heap. If an error has occurred, it will NULL: 35593E0
+
+HeapSize:
+CALL ADDRESS:
+327EC84
+
+HeapSize:
+argument number 0:
+hHeap - HANDLE, A handle to the heap whose memory block is to be freed.This handle is returned by either the HeapCreate or GetProcessHeap function.: 3550000
+
+argument number 1:
+dwFlags - DWORD, The heap allocation options. Specifying any of these values will override the corresponding value specified when the heap was created with HeapCreate.This parameter can be one or more of values. 1 - HEAP_NO_SERIALIZE
+
+argument number 2:
+lpMem - PVOID, A pointer to the memory block to be freed.This pointer is returned by the HeapAlloc or HeapReAlloc functionThis pointer can be NULL.: 356CCC0
+
+HeapSize
+RETURN PARSING VALUE:
+Ans of function - If the function succeeds, the return VALUE is the requested size of the allocated memory block, in bytes.If the function fails, the return VALUE is -1: 5092
+
+HeapSize:
+CALL ADDRESS:
+327E300
+
+HeapSize:
+argument number 0:
+hHeap - HANDLE, A handle to the heap whose memory block is to be freed.This handle is returned by either the HeapCreate or GetProcessHeap function.: 3550000
+
+argument number 1:
+dwFlags - DWORD, The heap allocation options. Specifying any of these values will override the corresponding value specified when the heap was created with HeapCreate.This parameter can be one or more of values. 0 - NULL
+
+argument number 2:
+lpMem - PVOID, A pointer to the memory block to be freed.This pointer is returned by the HeapAlloc or HeapReAlloc functionThis pointer can be NULL.: 356E280
+
+HeapSize
+RETURN PARSING VALUE:
+Ans of function - If the function succeeds, the return VALUE is the requested size of the allocated memory block, in bytes.If the function fails, the return VALUE is -1: 128
+
+HeapFree:
+CALL ADDRESS:
+327ECE0
+
+HeapFree:
+argument number 0:
+hHeap - HANDLE, A handle to the heap whose memory block is to be freed.This handle is returned by either the HeapCreate or GetProcessHeap function.: 3550000
+
+argument number 1:
+dwFlags - DWORD, The heap allocation options. Specifying any of these values will override the corresponding value specified when the heap was created with HeapCreate.This parameter can be one or more of values. 0 - NULL
+
+argument number 2:
+lpMem - PVOID, A pointer to the memory block to be freed.This pointer is returned by the HeapAlloc or HeapReAlloc functionThis pointer can be NULL.: 35A6700
+
+HeapFree
+RETURN PARSING VALUE:
+Ans of function - If the function succeeds, the return VALUE is nonzero.If the function fails, the return VALUE is zero: 1
+
+HeapFree:
+CALL ADDRESS:
+327ECD8
+
+HeapFree:
+argument number 0:
+hHeap - HANDLE, A handle to the heap whose memory block is to be freed.This handle is returned by either the HeapCreate or GetProcessHeap function.: 3550000
+
+argument number 1:
+dwFlags - DWORD, The heap allocation options. Specifying any of these values will override the corresponding value specified when the heap was created with HeapCreate.This parameter can be one or more of values. 0 - NULL
+
+argument number 2:
+lpMem - PVOID, A pointer to the memory block to be freed.This pointer is returned by the HeapAlloc or HeapReAlloc functionThis pointer can be NULL.: 35A09E8
+
+HeapFree
+RETURN PARSING VALUE:
+Ans of function - If the function succeeds, the return VALUE is nonzero.If the function fails, the return VALUE is zero: 1
+
